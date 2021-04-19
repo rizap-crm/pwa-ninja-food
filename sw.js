@@ -72,3 +72,66 @@ self.addEventListener('fetch', evt => {
     );
   }
 });
+
+// nootification events
+// 最簡單模式
+//self.addEventListener('push', () => {
+//  self.registration.showNotification('test message', {});
+//});
+
+//var pushData={};
+//// 多功能
+//self.addEventListener('push', (evt)=> {
+//  //pushData = evt.data.json();
+//  console.log(evt.data);
+//  pushData = evt.data;
+//  self.registration.showNotification('test message', {});
+//});
+
+
+self.addEventListener('push', function(event) {
+  var notiPayload = {};
+  
+  if (event.data) {
+    const dataText = event.data.text();
+//    notificationTitle = 'Custom Notification';
+//    notificationOptions.body = 'Message: ' + `${dataText}`;
+//    var title = event.data.notification.title;
+//    var message = event.data.notification.message;
+//    var icon = event.data.notification.icon;
+//    var notificationTag = event.data.notification.tag;
+    notiPayload = event.data.json();
+    console.log(dataText, notiPayload);
+  }
+  
+  var options = {
+    body: notiPayload.body,
+    icon: '../img/dish.png',
+    actions: [
+      {
+        action: 'explore',
+        title: 'Explore the new world',
+        icon: '../img/dish.png'
+      },
+      {
+        action: 'console.log("close");',
+        title: 'Close',
+        icon: '../img/dish.png'
+      }
+    ]
+    
+  };
+  
+  self.registration.showNotification(notiPayload.title, options);
+  
+});
+
+
+
+
+
+
+
+
+
+
