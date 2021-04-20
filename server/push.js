@@ -11,7 +11,7 @@ let vapidkeys = {
 
 push.setVapidDetails('mailto:test@example.com', vapidkeys.publicKey, vapidkeys.privateKey);
 
-let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/fMUnyq3ws88:APA91bE5FTc7rOVcZxSyuI-L9olA-d3m9FoTQ_0MDq0HGe5Ga0wOG5s0eOBpUgtsfnXtX30ywCTlWKL6dLtvnul06puuQDyKegAl5qEmVul6bBAby5K01l2mUSMX8jLQcz4MA7CqcZpx","expirationTime":null,"keys":{"p256dh":"BNc_1m4NxSMWqpHhvW7hIWhATzJmIFs8iTTPQzxmNLLa8YLsEYDLgkpbbHUowsnkoQvNYw6uL7-n-mCZX6xZTrQ","auth":"8ZH8BL2VNIHp900vIPNRgw"}};
+let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/cvX6G89MJI8:APA91bF9aJen1CNYfFCP2NKzYEmOasprajSes_0TB9_4ZeSCaIzXKHEEgTW8M81oBnffqYtg3SDOIP5l5FyNUTiczw_jSZJ_Ig7lf9OHWDhmHdJFfPZgcophQP4VXLv9gE2RJ-nJMja5","expirationTime":null,"keys":{"p256dh":"BIBYth-HjVEC-hkRfg-Pw3ysx0FQkoXzR9gOGR47E-cUBh5lMeozpXGp_WmP7PXZVJq15rlWxLwI2JR3TUZ7omo","auth":"2JPksqCSpViJM7EmyCQesA"}};
 
 var payload = {
   // 自定義，可以夾帶客製資料

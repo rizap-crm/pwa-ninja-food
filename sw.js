@@ -105,18 +105,21 @@ self.addEventListener('push', function(event) {
   }
   
   var options = {
-    body: notiPayload.body,
-    icon: '../img/dish.png',
+//    body: notiPayload.body,
+    body: 'test',
+    icon: './img/icons/icon-72x72.png',
+    image: './img/dish.png',
+    requireInteraction: true,
     actions: [
       {
         action: 'explore',
-        title: 'Explore the new world',
-        icon: '../img/dish.png'
+        title: 'Open App',
+        icon: './img/icons/icon-72x72.png'
       },
       {
-        action: 'console.log("close");',
+        action: 'close',
         title: 'Close',
-        icon: '../img/dish.png'
+        icon: './img/icons/icon-72x72.png'
       }
     ]
     
@@ -126,7 +129,18 @@ self.addEventListener('push', function(event) {
   
 });
 
+self.addEventListener('notificationclick', function(e) {
+  var notification = e.notification;
+  //var primaryKey = notification.data.primaryKey;
+  var action = e.action;
 
+  if (action === 'close') {
+    notification.close();
+  } else {
+    clients.openWindow('http://127.0.0.1:3218/');
+    notification.close();
+  }
+});
 
 
 
