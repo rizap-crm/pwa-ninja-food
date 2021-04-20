@@ -12,5 +12,8 @@ async function subscribe(){
     userVisibleOnly: true,
     applicationServerKey: 'BLf4UC3iYjaoB08BERPnCy_-SxGwb_tgWPJBgvuz3x21loDS1VeUI55RbcrflXw4Fh0qLUbAOCeMRzTwvC0eB3s'
   })
+  document.querySelector('#sub-string').innerHTML=JSON.stringify(push);
+  document.querySelector('#sub-string').style.height='250px'
+  document.querySelector('#sub-string').style.display = "block";
   console.log(JSON.stringify(push));
 }
