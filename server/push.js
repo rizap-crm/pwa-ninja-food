@@ -14,13 +14,14 @@ push.setVapidDetails('mailto:test@example.com', vapidkeys.publicKey, vapidkeys.p
 let sub = 
 //2NDSP3 localhost //{"endpoint":"https://fcm.googleapis.com/fcm/send/cvX6G89MJI8:APA91bF9aJen1CNYfFCP2NKzYEmOasprajSes_0TB9_4ZeSCaIzXKHEEgTW8M81oBnffqYtg3SDOIP5l5FyNUTiczw_jSZJ_Ig7lf9OHWDhmHdJFfPZgcophQP4VXLv9gE2RJ-nJMja5","expirationTime":null,"keys":{"p256dh":"BIBYth-HjVEC-hkRfg-Pw3ysx0FQkoXzR9gOGR47E-cUBh5lMeozpXGp_WmP7PXZVJq15rlWxLwI2JR3TUZ7omo","auth":"2JPksqCSpViJM7EmyCQesA"}};
 
-//2NDSP3 chrom to https://rizap-crm.github.io/pwa-ninja-food/ //{"endpoint":"https://fcm.googleapis.com/fcm/send/drgXzp4e4sI:APA91bEVk0k78B75Wkkco76DWME2rPZM1fDK6y5uD1G4h0YKfO5-IjrATTJ1di52591TYGAek3PaFVjosns7Bh51O2jUMUp9L8MDEoamy-rElFe9fv7EphtHHoyXLNeWljjvk83JolHw","expirationTime":null,"keys":{"p256dh":"BDd1Df41mWHXLi3JEugJByZFVcT2dzOhoDMfLtK_vO3MP47_ODWs8GgeTkMDn6ITjzxALJocivSGYE5CM38GMlg","auth":"4Q2HSqHUnn1nEuZuUGy2KA"}};    
+//2NDSP3 chrom to https://rizap-crm.github.io/pwa-ninja-food/ 
+{"endpoint":"https://fcm.googleapis.com/fcm/send/drgXzp4e4sI:APA91bEVk0k78B75Wkkco76DWME2rPZM1fDK6y5uD1G4h0YKfO5-IjrATTJ1di52591TYGAek3PaFVjosns7Bh51O2jUMUp9L8MDEoamy-rElFe9fv7EphtHHoyXLNeWljjvk83JolHw","expirationTime":null,"keys":{"p256dh":"BDd1Df41mWHXLi3JEugJByZFVcT2dzOhoDMfLtK_vO3MP47_ODWs8GgeTkMDn6ITjzxALJocivSGYE5CM38GMlg","auth":"4Q2HSqHUnn1nEuZuUGy2KA"}};    
 
 // Vivo PC to https://rizap-crm.github.io/pwa-ninja-food/    
 //{"endpoint":"https://fcm.googleapis.com/fcm/send/dJ2KgJymJsU:APA91bFMIQtGwMn_7zauksu9h50LDN47e25bajBPdc9uyHv1Fx6ZPw_B7h5xy1oWG4MfyCzvNlOew8VL6tHW8XqdIydr6RmFTPQjGjb4AHSt5NWJnpLVakRQYiCcd8hqJ3WCZMz_RNla","expirationTime":null,"keys":{"p256dh":"BMmnZJWQ2_9y0oWuCygmZc3ZSv7JPjJ0FqJfCudldTSbi1BSOHr1bYiWGVveQJ7Ju8FpTu3UhCytyjSsu09N4RA","auth":"Xfg5ct0VbpFW7V6aMWW1ig"}};
 
 // Vivo PC Android emulator to //rizap-crm.github.io/pwa-ninja-food/
-{"endpoint":"https://fcm.googleapis.com/fcm/send/fR6wtmbiPsQ:APA91bFOaPf-_RCc1Mlx1ckg3HNC1WFuoO6Q83FvzoYuPp9tC5P-NwLlz0OeAByBY_YWye-TCQjCRW9ItFovW2t_iBr_7qj9i_LD3wxjcbYcU3hPn1BvCobN6NSj0TQl7EQfhzm8ys3q","expirationTime":null,"keys":{"p256dh":"BMgm3-4cZahRFtdsqzEBB7nul5R8QslqDB3q07WSQ3mvuiYzsI5RM8nqAdywtOSc_tZr6N2nHj9lcnR22p4ZH5w","auth":"nl-5gok81EXpj1gctKJBAw"}};
+//{"endpoint":"https://fcm.googleapis.com/fcm/send/fR6wtmbiPsQ:APA91bFOaPf-_RCc1Mlx1ckg3HNC1WFuoO6Q83FvzoYuPp9tC5P-NwLlz0OeAByBY_YWye-TCQjCRW9ItFovW2t_iBr_7qj9i_LD3wxjcbYcU3hPn1BvCobN6NSj0TQl7EQfhzm8ys3q","expirationTime":null,"keys":{"p256dh":"BMgm3-4cZahRFtdsqzEBB7nul5R8QslqDB3q07WSQ3mvuiYzsI5RM8nqAdywtOSc_tZr6N2nHj9lcnR22p4ZH5w","auth":"nl-5gok81EXpj1gctKJBAw"}};
 
 var payload = {
   // 自定義，可以夾帶客製資料
