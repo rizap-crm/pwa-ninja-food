@@ -26,6 +26,23 @@ db.collection('recipes').onSnapshot(snapshot => {
   });
 });
 
+// Update the max id
+var last_sub_id=0;
+var last_sub;
+db.collection('Subscriptions').onSnapshot(snapshot => {
+  last_sub_id=0;
+  snapshot.forEach((doc) => {
+    //console.log(doc.id, '=>', doc.data());
+    if (parseInt(doc.id) > last_sub_id) {
+      last_sub_id = parseInt(doc.id);
+      last_sub = doc.data()
+    }
+  });
+
+  console.log("subscription max id is:", last_sub_id);
+});
+  
+
 // add new recipe
 const form = document.querySelector('form');
 form.addEventListener('submit', evt => {
