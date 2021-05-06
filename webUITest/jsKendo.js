@@ -65,10 +65,12 @@ $(".friend").each(function(){
     //var childTop = childOffset.top - parentOffset.top;
     //console.log("childTop:", childTop, $(this).index());
 
-    $("#header-title").text("Chat");
+
 
     
     $(this).click(function(){
+      $("#header-title").text("Chat");
+      
       var childOffset = $(this).offset();
       var parentOffset = $(this).parent().parent().offset();
       var childTop = childOffset.top - parentOffset.top;

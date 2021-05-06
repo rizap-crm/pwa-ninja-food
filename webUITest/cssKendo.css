@@ -12,7 +12,7 @@
 #view-code:hover{opacity:1;}
 #chatbox{
 /*	width:290px;*/
-    width:100%;
+    width:94.5%;
 	background:#fff;
 	border-radius:6px;
 	overflow:hidden;
@@ -33,7 +33,7 @@
 	width:290px;
 	height:484px;
 */
-    widows:100%;
+    width:90%;
     height:100%;
 }
 #topmenu{
@@ -79,7 +79,7 @@
 	padding:15px 0 0 0;			
 	float:left;
 /*	width:220px;*/
-	width:80%;
+	width:50%;
 }
 .friend p strong{
   font-weight:600;
@@ -146,8 +146,9 @@
 .p1 #profile{
 	background:#fff url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/timeline1.png") 0 0;
     background-size:cover;
-    width:95%;
-    border-radius:5px
+    width:100%;
+    border-radius:5px;
+/*  margin-left: 20px*/
 }
 #profile .avatar{
 	width:68px;
@@ -186,7 +187,7 @@
 	width:290px;
 	height:270px;
 */
-    width:95%;
+    width:100%;
 	overflow-y:scroll;	
 	overflow-x:hidden;
 	padding-right: 20px;
@@ -228,8 +229,8 @@
 }
 #chat-messages div.message.right img{
 	float: right;	
-    margin-left: 0;
-	margin-right: -38px;	
+    margin-left: 10px;
+	margin-right: -8px;	
 }
 .message .bubble{	
 	background:#f0f4f7;
