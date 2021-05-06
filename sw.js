@@ -105,8 +105,7 @@ self.addEventListener('push', function(event) {
   }
   
   var options = {
-//    body: notiPayload.body,
-    body: 'test',
+    body: notiPayload.body,
     icon: './img/icons/icon-72x72.png',
     image: './img/dish.png',
     requireInteraction: true,
