@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--    <base href="https://demos.telerik.com/kendo-ui/m/index">-->
+    <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }</style>
+    <title></title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.1.330/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.1.330/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.1.330/styles/kendo.mobile.all.min.css" />
+
+    <link rel="stylesheet" href="/cssKendo.css">
+
+    <script src="https://kendo.cdn.telerik.com/2021.1.330/js/jquery.min.js"></script>    
+    <script src="https://kendo.cdn.telerik.com/2021.1.330/js/kendo.all.min.js"></script>
+
+  </head>
+  <body>
+    <div data-role="view" data-title="Friends" id="listview-home" data-use-native-scrolling="true">
+      <header data-role="header">
+        <div data-role="navbar" id="normal" class="km-accent">
+
+          <a data-align="right" data-role="button" href="#" data-rel="" data-icon="contacts"></a>
+          <a data-align="left" data-role="button" href="#" data-rel="" data-icon="back"></a>
+
+          <span id="header-title" data-role="view-title"></span>
+
+        </div>
+
+      </header>
+      
+      <div id="chatbox">
+        <div id="friendslist">
+          <div id="friends"></div>
+        </div>  
+
+        <div id="chatview" class="p1">    	
+          <div id="profile">
+
+              <div id="close">
+                  <div class="cy"></div>
+                  <div class="cx"></div>
+              </div>
+
+              <p style="color:white">Miro Badev</p>
+              <span>miro@badev@gmail.com</span>
+          </div>
+          
+          <div class="chat-messages1">
+             
+              <div class="message1" style="margin-top:10px">
+<!--                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" style="float: left;  margin-left: 10px; border-radius: 50%;	  width: 30px; margin-top: 12px;margin-right:10px" />-->
+                  <div class="bubble1" style="max-width:80%;min-height:40px; padding:10px; background:lightgray; border-radius:5px">
+                      Really cool stuff!  
+<!--                      <div class="corner1"></div>-->
+                      
+                  </div>
+                  <span style="float:left; margin-left: 10px; font-size:10px; color:gray">2021/05/07 13:05</span>
+
+              </div>           
+              <br>
+              <br>
+              <div class="message1-right">
+<!--                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" style="float: right;   border-radius: 50%;	  width: 30px; margin-top: 12px;margin-right: : 10px;" />-->
+                  <div class="bubble1" style="max-width:80%;min-height:40px; padding:10px; background:lightgray; border-radius:5px; text-align:right; margin-left:20%">
+                      Really cool stuff!    
+<!--                      <div class="corner1"></div>-->
+                  </div>
+                  <span style="float:right; margin-right: 10px; font-size:10px; color:gray">2021/05/07 13:05</span>
+
+              </div>             
+          </div>
+<!--
+          
+          <div id="chat-messages">
+              <label>Thursday 02</label>
+
+              <div class="message">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" />
+                  <div class="bubble" style="max-width:80%">
+                      Really cool stuff!    ghsjgajhsgjags hgdhjgdgdjhgdjgdjgdjs dgjhdgjhsdgjsgdjjhdgjsgdjsgdjs kjkldjsldjls
+                      <div class="corner"></div>
+                      <span>3 min</span>
+                  </div>
+
+              </div>
+              <br>
+
+              <div class="message right">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg" />
+                  <div class="bubble">
+                      Can you share a link for the tutorial?
+                      <div class="corner"></div>
+                      <span>1 min</span>
+                  </div>
+              </div>
+
+              <div class="message">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" />
+                  <div class="bubble">
+                      Yeah, hold on
+                      <div class="corner"></div>
+                      <span>Now</span>
+                  </div>
+              </div>
+
+              <div class="message right">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/2_copy.jpg" />
+                  <div class="bubble">
+                      Can you share a link for the tutorial?
+                      <div class="corner"></div>
+                      <span>1 min</span>
+                  </div>
+              </div>
+
+              <div class="message">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" />
+                  <div class="bubble">
+                      Yeah, hold on
+                      <div class="corner"></div>
+                      <span>Now</span>
+                  </div>
+              </div>
+
+          </div>
+-->
+
+          <div id="sendmessage">
+              <input type="text" value="Send message..." />
+              <button id="send"></button>
+          </div>
+
+        </div> 
+      </div>                              
+    </div>
+
+  <style>
+/*
+      .km-ios #listview-home .km-content {
+          background: url(../content/shared/images/patterns/pattern2.png);
+          box-shadow: inset 0 0 30px #95764D;
+          -webkit-box-shadow: inset 0 0 30px #95764D;
+      }
+      .km-ios #listview-home .km-listview .km-list {
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          box-shadow: 0 1px 5px #95764D;
+          -webkit-box-shadow: 0 1px 5px #95764D;
+      }
+      .km-ios #listview-home .km-listview .km-list > li {
+          border: none;
+      }
+      .km-ios #listview-home .km-listview .km-list > li:last-child {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+      }
+      .km-ios #listview-home .km-navbar {
+          background: url(../content/shared/images/patterns/pattern9.png);
+      }
+      .km-tablet .km-ios #listview-home .km-view-title {
+          color: #fff;
+          text-shadow: 0 -1px rgba(0,0,0,.5);
+      }
+      .km-ios #listview-home .km-navbar .km-button
+      {
+          background-color: #974d2e;
+      }
+*/
+
+  </style>
+
+
+
+
+    <script>
+      var app = new kendo.mobile.Application(document.body, { skin: "nova" });
+    </script>
+
+    <script src="./jsKendo.js"></script>    
+  
+  </body>
+</html>
